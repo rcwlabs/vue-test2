@@ -5,11 +5,15 @@
       <button @click="changeName">Change my name</button>
       <hr>
       <div class="row">
-          <div class="col-xs-12 col-sm-6">
-              <user-detail :name='name'></user-detail>
+        <div class="col-xs-12 col-sm-6">
+            <user-detail 
+                :name='name' 
+                :age='age'
+                @nameWasReset="name = $event">
+            </user-detail>
           </div>
           <div class="col-xs-12 col-sm-6">
-              <user-edit></user-edit>
+              <user-edit :age="age" @ageWasEdited="age = $event"></user-edit>
           </div>
       </div>
   </div>
@@ -22,7 +26,8 @@ import UserEdit from './UserEdit'
 export default {
     data: function() {
         return {
-            name: 'Robert'
+            name: 'Robert',
+            age: 21
         }
     },
     methods: {

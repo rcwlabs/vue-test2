@@ -9,14 +9,14 @@
 import User from './components/User'
 
 export default {
-  data () {
-    return {
-      msg: 'This is MY Vue.js App'
-    }
-  },
-  components: {
-    User
-  }
+	data () {
+		return {
+			msg: 'This is MY Vue.js App'
+		}
+	},
+	components: {
+		User
+	}
 }
 </script>
 
