@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <h1>{{ msg }}</h1>
-    <User />
+    <User2 />
   </div>
 </template>
 
 <script>
-import User from './components/User'
+import User2 from './components/User2'
 
 export default {
 	data () {
@@ -15,7 +15,7 @@ export default {
 		}
 	},
 	components: {
-		User
+		User2
 	}
 }
 </script>
